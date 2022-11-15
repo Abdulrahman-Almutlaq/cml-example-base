@@ -8,8 +8,6 @@ jobs:
       - uses: actions/setup-python@v4
       - uses: iterative/setup-cml@v1
       - name: Train model
-        env:
-          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
      	with:
      	  python-version: '3.9.12' 
         run: |
