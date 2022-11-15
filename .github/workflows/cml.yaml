@@ -18,7 +18,6 @@ jobs:
           cat metrics.txt >> report.md
           
           echo "## Data viz" >> report.md
-          cml asset publish publish plot.png --md >> report.md
           cml asset publish plot.png --md >> report.md
           
           cml-send-comment report.md
