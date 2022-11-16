@@ -8,10 +8,10 @@ stages:
     deps:
     - get_data.py
     outs:
-    - data/train_features.csv
-    - data/train_labels.csv
-    - data/test_features.csv
-    - data/test_labels.csv
+    - train_features.csv
+    - train_labels.csv
+    - test_features.csv
+    - test_labels.csv
   train:
     cmd: python train.py
     deps:
