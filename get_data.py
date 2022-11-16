@@ -15,5 +15,5 @@ if not os.path.isdir("data"):
     os.mkdir("data")
 np.savetxt("data/test_features.csv", X_test)
 np.savetxt("data/test_labels.csv", y_test)
-np.savetxt("data/train_features.csv", X_test)
-np.savetxt("data/train_labels.csv", y_test)
+np.savetxt("data/train_features.csv", X_train)
+np.savetxt("data/train_labels.csv", y_train)
