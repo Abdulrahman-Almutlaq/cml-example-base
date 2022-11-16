@@ -6,4 +6,14 @@ stages:
     outs:
     - data/test_features.csv
     - data/test_labels.csv
-  
+  train:
+    cmd: python train.py
+    deps:
+    - data/test_features.csv
+    - data/test_labels.csv
+    - train.py
+    outs:
+    - plot.png
+    metrics:
+    - metrics.txt:
+        cache: false
