@@ -6,8 +6,8 @@ import os
 import numpy as np
 
 # Read in data
-X_test = np.genfromtxt("data/test_features.csv")
-y_test = np.genfromtxt("data/test_labels.csv")
+X_test = np.genfromtxt("data/test_features.csv")[:10]
+y_test = np.genfromtxt("data/test_labels.csv")[:10]
 
 # Fit a model
 depth = 2
