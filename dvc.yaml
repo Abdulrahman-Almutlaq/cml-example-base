@@ -1,0 +1,23 @@
+stages:
+  requires:
+    cmd: sudo pip install -r /home/abdulrahman/Desktop/cml/cml-example-base/requirements.txt
+    deps:
+    - requirements.txt
+  get_data:
+    cmd: python get_data.py
+    deps:
+    - get_data.py
+    outs:
+    - data/train_features.csv
+    - data/train_labels.csv
+    - data/test_features.csv
+    - data/test_labels.csv
+  train:
+    cmd: python train.py
+    deps:
+    - train.py
+    outs:
+    - plot.png
+    metrics:
+    - metrics.txt:
+        cache: false
