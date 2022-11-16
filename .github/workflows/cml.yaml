@@ -14,7 +14,6 @@ jobs:
           pip3 install --upgrade pip
           pip install -r requirements.txt
           dvc repro
-          dvc push
           git fetch 
           dvc metrics diff --show-md master >> report.md
           
