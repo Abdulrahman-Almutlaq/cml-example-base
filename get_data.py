@@ -9,7 +9,7 @@ X, y = make_classification(n_samples=1000, random_state=seed)
 
 # Make a train/test split
 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=seed)
-
+X_test , y_test = X_test , y_test
 # Save it
 if not os.path.isdir("data"):
     os.mkdir("data")
