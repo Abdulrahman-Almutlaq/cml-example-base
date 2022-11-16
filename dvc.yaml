@@ -1,6 +1,6 @@
 stages:
   requires:
-    cmd: sudo pip install -r /home/abdulrahman/Desktop/cml/cml-example-base/requirements.txt
+    cmd: pip install -r requirements.txt
     deps:
     - requirements.txt
   get_data:
